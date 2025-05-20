@@ -37,7 +37,7 @@ export default function Navbar() {
             </div>
 
             <div className="navbar-end mr-5">
-                <a href="https://github.com/Josblack25/crud-flask-react" target='_blank' >
+                <a href="https://github.com/Josblack25/crud-docker" target='_blank' >
                     <img src={github} alt="github" className=' imgGit object-contain'/>
                 </a>
                           
