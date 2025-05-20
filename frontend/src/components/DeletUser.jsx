@@ -11,7 +11,7 @@ export default function deletUser ({userId, onUserUpdated}) {
             return;
         }
 
-        fetch(`http://localhost:5000/api/delet/users/${userId}`, {
+        fetch(`http://13.220.160.160:5000/api/delet/users/${userId}`, {
             method: 'DELETE'
         })
         .then((response) => {

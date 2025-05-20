@@ -6,7 +6,7 @@ export default function TableList() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/data/users")
+    fetch("http://13.220.160.160:5000/api/data/users")
       .then((response) => response.json())
       .then((data) => {
         console.log("datos recibidos", data);

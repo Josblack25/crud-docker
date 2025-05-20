@@ -12,7 +12,7 @@ export default function ModalForm({ setUsers }) {
   };
 
   const addUser = (newUser) => {
-    fetch("http://localhost:5000/api/create/users", {
+    fetch("http://13.220.160.160:5000/api/create/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

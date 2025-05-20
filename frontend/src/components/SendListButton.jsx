@@ -8,7 +8,7 @@ export default function SendListButton({userId, onUserUpdated}) {
             console.error('ID de usuario no proporcionado');
             return;
         }
-        fetch(`http://localhost:5000/api/restore/users/${userId}`, {
+        fetch(`http://13.220.160.160:5000/api/restore/users/${userId}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

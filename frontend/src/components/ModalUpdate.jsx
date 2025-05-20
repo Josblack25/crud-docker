@@ -26,7 +26,7 @@ export default function ModalUpdate({ usertoUpdate, setUsers, modalId }) {
 
   // Función para actualizar el usuario
   const updateUser = (updatedUser) => {
-    fetch(`http://localhost:5000/api/update/users/${usertoUpdate.id}`, {
+    fetch(`http://13.220.160.160:5000/api/update/users/${usertoUpdate.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
