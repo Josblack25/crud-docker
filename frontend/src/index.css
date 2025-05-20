@@ -1,0 +1,210 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+    --background-color:  #21251f;
+    --primary-color:  #43515c;
+    --secundary-color:  #c8f560;
+    --tertary-color: #7862f8;
+    --ligt-color: rgb(255, 255, 255);
+    --tex-flor: florence;
+    --tex-campa: campanaScrip;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--background-color);
+}
+
+.borderColor {
+    border: 3px solid var(--secundary-color);
+}
+
+.navBar {
+    width: 95%;
+    height: 70px;
+
+    border-radius: 0px 0px 20px 20px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+
+    background: var(--primary-color);
+
+    box-shadow: 0px 1px 0px var(--tertary-color), 1px 2px 0px var(--tertary-color), 2px 3px 0px var(--tertary-color), 3px 4px 0px var(--tertary-color);
+}
+
+
+.imgGit {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.imgGit:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* estilos tabla lista */
+
+.lisTable {
+
+    width: 95%;
+    height: auto;
+
+    border-radius: 0px 0px 20px 20px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+
+    background: var(--primary-color);
+
+    box-shadow: 0px 1px 0px var(--tertary-color), 1px 2px 0px var(--tertary-color), 2px 3px 0px var(--tertary-color), 3px 4px 0px var(--tertary-color);
+
+
+}
+
+
+.btnNew {
+    width: 100px;
+    height: 40px;
+
+    border-radius: 20px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.btnNew:hover {
+    cursor: pointer;
+    background-color: var(--secundary-color);
+    transition: 0.5s;
+}
+
+.btnNew:active {
+    transform: scale(1.1); /* Reduce ligeramente el tamaño al hacer clic */
+}
+
+
+.btnUpdate {
+    width: 100px;
+    height: 40px;
+
+    border-radius: 20px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+    background-color: #1982c4;
+
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.btnUpdate:hover {
+    cursor: pointer;
+}
+
+.btnUpdate:active {
+    transform: scale(1.1); /* Reduce ligeramente el tamaño al hacer clic */
+}
+
+.btnSt {
+    width: 120px;
+    height: 40px;
+
+    border-radius: 20px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+    background-color: #ffca3a;
+
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.btnSt:hover {
+    cursor: pointer;
+}
+
+.btnSt:active {
+    transform: scale(1.1); /* Reduce ligeramente el tamaño al hacer clic */
+}
+
+.btnRs {
+    width: 120px;
+    height: 40px;
+
+    border-radius: 20px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+    background-color: var(--secundary-color);
+
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.btnRs:hover {
+    cursor: pointer;
+}
+
+.btnRs:active {
+    transform: scale(1.1); /* Reduce ligeramente el tamaño al hacer clic */
+}
+
+
+
+
+.btnDl {
+    width: 120px;
+    height: 40px;
+
+    border-radius: 20px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+    background-color: #ff595e;
+
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.btnDl:hover {
+    cursor: pointer;
+}
+
+.btnDl:active {
+    transform: scale(1.1); /* Reduce ligeramente el tamaño al hacer clic */
+}
+
+
