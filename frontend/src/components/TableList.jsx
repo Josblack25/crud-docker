@@ -31,28 +31,42 @@ export default function TableList() {
 
   return (
     < >
-      <div className="w-full flex items-center flex-col lisTable px-4 ">
+      <div className="w-auto flex items-center flex-col lisTable ">
 
-        <div className="flex  flex-col md:flex-row justify-between items-center mt-10 w-full ">
+    
+
+        <div className="flex justify-between items-center mt-10 ">
+
+          <div className=" total mr-10  flex flex-col items-center">
+
+            <h2> Usuarios total </h2>
+
+            <h1>              
+              {users && Array.isArray(users) ? users.filter(user => user.status === 1).length : 0} {/* Filtrar usuarios con estado 1 */}
+            </h1>
+          
+            
+          </div>
+
           {/* Add new users */}
           <ModalForm setUsers={setUsers} />
 
           {/* Input de búsqueda */}
-          <div className="navbar-end">
+          <div className="search navbar-end">
             <input
               type="text"
               placeholder="Search"
-              className="input input-bordered w-full max-w-xs md:max-w-sm mt-4 md:mt-0 "
+              className="input input-bordered w-24 md:w-auto mr-10"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)} // Actualizar searchTerm
             />
           </div>
         </div>
 
-        <div className=" lisTable w-full borderColor overflow-x-auto mt-5 ">
+        <div className=" lisTable flex items-center justify-center borderColor">
           
-          <table className="table w-full min-w-[600px] block md:table ">
-            <thead className="md:table-header-group">
+          <table className="table">
+            <thead>
               <tr>
                 <th>ID</th>
                 <th>Name</th>
@@ -70,12 +84,12 @@ export default function TableList() {
                     user.name.toLowerCase().includes(searchTerm.toLowerCase()) // Filtrar por el término de búsqueda
                 )
                 .map((user) => (
-                  <tr key={user.id} className="hover:bg-base-300 md:table">
-                    <td className=" md:table-cell font-bold">{user.id}</td>
-                    <td className="md:table-cell">{user.name.length > 10 ? `${user.name.substring(0, 10)}...` : user.name}</td>
-                    <td className=" md:table-cell">{user.email}</td>
-                    <td className=" md:table-cell">{user.age}</td>
-                    <td className="flex flex-wrap gap-2 mt-2 md:table-cell">
+                  <tr key={user.id} className="hover:bg-base-300">
+                    <td>{user.id}</td>
+                    <td>{user.name.length > 10 ? `${user.name.substring(0, 10)}...` : user.name}</td>
+                    <td>{user.email}</td>
+                    <td>{user.age}</td>
+                    <td>
                       <ModalUpdate usertoUpdate={user} setUsers={setUsers} modalId={`update_modal_${user.id}`} />
 
                       {user.status === 1 && 
