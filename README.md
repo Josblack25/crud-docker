@@ -7,7 +7,7 @@ Aplicación construida con **React** **Flask** para la prueba técnica de Desarr
 
 ## 🚀 Demo en Vercel
 
-> ([https://vercel-ract-flask.vercel.app/])
+> ([http://13.220.160.160:5000/])
 
 ---
 
@@ -16,7 +16,6 @@ Aplicación construida con **React** **Flask** para la prueba técnica de Desarr
 - ✅ Crear usuarios con los campos requeridos.
 - ✅ Visualizar lista de usuarios.
 - ✅ Eliminar usuario.
-- ✅ Paginación (4 productos en vista card, 10 en vista tabla).
 - ✅ Interfaz totalmente **responsiva** (móvil y desktop).
 - ✅ Estilo moderno con **TailwindCSS**.
 
@@ -36,20 +35,22 @@ Usé [TailwindCSS] porque:
 - Facilita crear una interfaz profesional con clases utilitarias.
 - Compatible con diseño responsivo y animaciones CSS avanzadas.
 
-### 💾 ¿Por qué lista de python?
-- Se especifica en la prueba que no debe haber base dato.
+### 💾 ¿Por qué docker?
+- Se especifica en la prueba que debe haber base dato.
 - Es la forma más rápida y limpia de garantizar persistencia mientras el servidor esta activo.
+- Uso de EC2 de AWS para descar docker y crear una base de datos de posgres.
 
 ---
 
 ## 📂 Estructura del Proyecto
 
 ```
-src/
-├── api/
-    ├── index.py           # Backend python - flask
-├── crus-react/            # Archivos estáticos
-     ├── dist/             # Archivos estaticos para levantar el frontend desde index.py
+crud-docker/
+├── backend/
+    ├── dist/             # Archivos estaticos para levantar el frontend desde app.py
+    ├── app.py           # Backend python - flask
+├── frontend/            # Archivos estáticos
+     
      ├──src/
         ├── assests/           # Recursos e img
         ├── components/        # Componentes reutilizables
@@ -78,7 +79,7 @@ src/
 
 4. Corre el proyecto en desarrollo:
    ```bash linux
-   python3 index.py
+   python3 app.py
    ```
 
 ---
@@ -111,7 +112,7 @@ npm run buils
 - [x] buscar usuario
 - [x] actualizar usuario
 - [x] truncar el exeso de caracteres a max 10
-- [x] vercel sin base de datos 
+- [x] base datos aws
 
 
 ---
