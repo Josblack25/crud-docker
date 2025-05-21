@@ -5,7 +5,7 @@ Aplicación construida con **React** **Flask** para la prueba técnica de Desarr
 
 ---
 
-## 🚀 Demo en Vercel
+## 🚀 Demo en AWS EC2 DOCKER
 
 > ([http://13.220.160.160:5000/])
 
