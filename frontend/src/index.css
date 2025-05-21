@@ -26,6 +26,10 @@ body {
     width: 95%;
     height: 70px;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     border-radius: 0px 0px 20px 20px;
 
     margin-left: 40px;
@@ -53,6 +57,8 @@ body {
     transform: scale(1.1);
     transition: 0.5s;
 }
+
+
 
 /* estilos tabla lista */
 
@@ -207,4 +213,90 @@ body {
     transform: scale(1.1); /* Reduce ligeramente el tamaño al hacer clic */
 }
 
+/* Contenedor de botones */
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
 
+/* Estilos generales de los botones */
+.btn {
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(1.05);
+}
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Estilos generales de los botones */
+.btn {
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(1.05);
+}
+
+/* Contenedor de botones */
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Estilos generales de los botones */
+.btn {
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(1.05);
+}
+
+/* Mejor responsividad */
+@media (min-width: 768px) {
+    .btn {
+        width: auto;
+        max-width: none;
+    }
+}
